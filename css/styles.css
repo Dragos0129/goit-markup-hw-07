@@ -797,3 +797,103 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
 }
+
+@media (max-width: 767px) {
+  .main-navigation-container .first-section-list {
+    display: none;
+  }
+  .another-container .address-container {
+    display: none;
+  }
+}
+.button-mobile {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .button-mobile {
+    display: none;
+  }
+}
+.button-mobile:hover,
+.button-mobile:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--WHITE);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-phone .is-open {
+  transform: translateX(0);
+}
+.menu-phone .button-mobile {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--NAVY-BLUE);
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu .address-link {
+  display: block;
+  padding: 10px;
+  color: var(--NAVY-BLUE);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.mobile-menu .address-link:hover {
+  color: var(--IRIS);
+}
+.mobile-menu .nav-studio {
+  color: var(--IRIS);
+}
+.menu-phone .socialmedia {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  padding: 64px 10px;
+}
+.phone-section .address-container .address-list {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.phone-section .address-container .address-list .address-link {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
