@@ -29,7 +29,7 @@
           >
           <!-- Burger King Menu Open -->
           <button
-            class="button-mobile js-open-menu"
+            class="button-mobile-open js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -69,7 +69,7 @@
       <!-- Section1 -->
       <section class="hero-image-section-container">
         <div class="container">
-          <h1 class="hero-image-header">
+          <h1 class="hero-image-header hero--title">
             Effective Solutions for Your Business
           </h1>
           <button class="hero-image-button" type="button" data-modal-open>
@@ -444,14 +444,19 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p class="subscribe-paragraph">Subscribe</p>
-          <form class="subscribe-form">
+        <div class="subscribe subscribe-two">
+          <p class="subscribe-paragraph sec--tablet">Subscribe</p>
+          <form
+            class="subscribe-form"
+            name="signup_form"
+            autocomplete="on"
+            novalidate
+          >
             <label class="subscribe-label"
               ><input
                 name="email"
                 type="email"
-                class="subscribe-input"
+                class="subscribe-input subscribe--input"
                 placeholder="E-mail"
                 required
             /></label>
@@ -477,7 +482,7 @@
         </p>
         <form>
           <!-- User-Name -->
-          <div class="modal-heading">
+          <div class="modal-heading subscribe-two modal--data">
             <label class="modal-label" for="user-name">Name</label>
             <div class="modal-table">
               <input
@@ -493,7 +498,7 @@
             </div>
           </div>
           <!-- Phone -->
-          <div class="modal-heading">
+          <div class="modal-heading modal--data">
             <label class="modal-label" for="user-phone">Phone</label>
             <div class="modal-table">
               <input
@@ -509,7 +514,7 @@
             </div>
           </div>
           <!-- Email -->
-          <div class="modal-heading">
+          <div class="modal-heading subscribe-two modal--data">
             <label class="modal-label" for="user-email">Email</label>
             <div class="modal-table">
               <input
@@ -557,32 +562,40 @@
       </div>
     </div>
     <div class="menu-phone js-menu-container" id="mobile-menu">
-      <button class="button-mobile js-close-menu">
-        <svg><use href="./images/icons.svg#icon-cancel-circle"></use></svg>
+      <button class="button-mobile-close js-close-menu">
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-cancel-circle"></use>
+        </svg>
       </button>
-      <ul class="mobile-menu">
+      <ul class="mobile-menu-list">
         <li>
           <a class="nav-link link nav-studio" href="./index.html">Studio</a>
         </li>
-        <li><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
-        <li><a class="nav-link link" href="">Contacts</a></li>
+        <li>
+          <a class="nav-link link nav--link" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li><a class="nav-link link nav--link" href="">Contacts</a></li>
       </ul>
       <div class="phone-section">
-        <address class="address-container">
-          <ul class="address-list list">
+        <address class="address-container-b">
+          <ul class="address-list-b list">
             <li>
-              <a class="address-link link" href="mailto:info@devstudio.com"
+              <a
+                class="address-link link sec-number"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="address-link link" href="tel:11(000)1111111"
+              <a class="address-link link sec-email" href="tel:11(000)1111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-        <ul class="socialmedia">
+        <ul class="social-media">
           <li class="socialicon">
             <a class="sociallist" href="">
               <svg class="svgproperties" width="24" height="24">
